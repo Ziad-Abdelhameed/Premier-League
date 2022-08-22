@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Login</title>
+    <link rel="stylesheet" href="CSS/first-web.css" />
+  </head>
+  <script>
+    function signUp() {
+      window.location.href = "http://127.0.0.1:5500/signup.html";
+    }
+    function login() {
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+
+      if (email === "ziad@gmail.com" && password === "123456") {
+        window.location.replace(
+          "http://127.0.0.1:5500/premier-league-table.html"
+        );
+      } else {
+        alert("Invalid email & password");
+      }
+    }
+    function showPassword() {
+      var password = document.getElementById("password");
+      if (password.type === "password") {
+        password.type = "text";
+      } else {
+        password.type = "password";
+      }
+    }
+  </script>
+
+  <body>
+    <div class="center-column-items">
+      <img id="logo" src="EPL.png" alt="Logo" />
+      <form
+        class="center-column-items"
+        onsubmit="event.preventDefault(); login();"
+      >
+        <input
+          id="email"
+          type="text"
+          name="email"
+          class="texts"
+          placeholder="Please Enter Email"
+          required
+        />
+
+        <input
+          id="password"
+          type="password"
+          name="password"
+          class="texts"
+          placeholder="Please Enter Password"
+          required
+        />
+        <div class="center-row-items" onclick="showPassword()">
+          <input type="checkbox" class="middle" />
+          <p>Show Password</p>
+        </div>
+        <input type="submit" value="Log In" class="texts login" />
+
+        <input
+          type="button"
+          value="Sign Up"
+          class="texts signup"
+          onclick="signUp()"
+        />
+      </form>
+    </div>
+  </body>
+</html>

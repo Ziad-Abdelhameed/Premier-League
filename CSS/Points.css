@@ -16,12 +16,12 @@ table, th, td {
 }
 
 .club {
-
     max-width: 25%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     border-radius: 30%;
+    padding-bottom: 10px;
 }
 table {
     width: 70%;
@@ -46,17 +46,12 @@ table {
     background-color: red;
 }
 .description {
-    
     position: absolute;
-    left: 5px;
-    down: 6px;
-    width: 22%;
     font-size: 18px;
     border: 2px solid blanchedalmond;
-    padding: 18px;
-    margin-bottom: 2px;
-    margin-top: 2px;
-    margin-left: -5px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
 }
 .UEFA {  
     display: inline-block;
@@ -73,6 +68,9 @@ table {
 .team {
     font-weight: bold;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
 }
 p {
     font-size: 28px;

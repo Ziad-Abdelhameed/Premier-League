@@ -6,6 +6,18 @@
 
     <link rel="stylesheet" href="CSS/Points.css" />
     <link rel="stylesheet" href="CSS/first-web.css" />
+
+    <script>
+      function redirectTo(name) {
+        if (name === "Mancity") {
+          window.location.href = "http://127.0.0.1:5500/mancity.html";
+        } else if (name === "Liverpool") {
+          window.location.href = "http://127.0.0.1:5500/liverpool.html";
+        } else {
+          alert("Coming soon");
+        }
+      }
+    </script>
   </head>
 
   <body>
@@ -33,9 +45,13 @@
         <div>
           <tr>
             <td class="first-four">1</td>
-            <td class="team" style="text-align: left">
-              Mancity
+            <td
+              class="team"
+              onclick="redirectTo('Arsenal')"
+              onclick="redirectTo('Mancity')"
+            >
               <img src="Clubs/Manchester_City_FC.png" alt="" class="club" />
+              Mancity
             </td>
             <td>2</td>
             <td>2</td>
@@ -47,13 +63,13 @@
           </tr>
           <tr>
             <td class="first-four">2</td>
-            <td class="team" style="text-align: left">
-              Arsenal
+            <td class="team" onclick="redirectTo('Arsenal')">
               <img
                 src="Clubs/arsenal-logo-B27C071FE1-seeklogo.com.png"
                 alt=""
                 class="club"
               />
+              Arsenal
             </td>
             <td>2</td>
             <td>2</td>
@@ -66,13 +82,13 @@
 
           <tr>
             <td class="first-four">3</td>
-            <td class="team" style="text-align: left">
-              Brentford
+            <td class="team" onclick="redirectTo('Brentford')">
               <img
                 src=" Clubs/Brentford_FC_crest.svg.png"
                 alt=""
                 class="club"
               />
+              Brentford
             </td>
             <td>2</td>
             <td>1</td>
@@ -85,9 +101,9 @@
 
           <tr>
             <td class="first-four">4</td>
-            <td class="team" style="text-align: left">
-              Tottenham
+            <td class="team" onclick="redirectTo('Tottenham')">
               <img src="Clubs/Tottenham_Hotspur.svg.png" alt="" class="club" />
+              Tottenham
             </td>
             <td>2</td>
             <td>1</td>
@@ -102,13 +118,13 @@
 
         <tr>
           <td class="to-europa">5</td>
-          <td class="team" style="text-align: left">
-            Newcastle
+          <td class="team" onclick="redirectTo('Newcastle')">
             <img
               src="Clubs/Newcastle_United_Logo.svg.png"
               alt=""
               class="club"
             />
+            Newcastle
           </td>
           <td>2</td>
           <td>1</td>
@@ -120,13 +136,13 @@
         </tr>
         <tr>
           <td>6</td>
-          <td class="team" style="text-align: left">
-            Leeds united
+          <td class="team" onclick="redirectTo('Leeds united')">
             <img
               src="Clubs/Leeds_United_F.C._logo.svg.png"
               alt=""
               class="club"
             />
+            Leeds united
           </td>
           <td>2</td>
           <td>1</td>
@@ -138,9 +154,9 @@
         </tr>
         <tr>
           <td>7</td>
-          <td class="team" style="text-align: left">
-            Chelsea
+          <td class="team" onclick="redirectTo('Chelsea')">
             <img src="Clubs/Chelsea_FC.svg.png" alt="" class="club" />
+            Chelsea
           </td>
           <td>2</td>
           <td>1</td>
@@ -152,13 +168,13 @@
         </tr>
         <tr>
           <td>8</td>
-          <td class="team" style="text-align: left">
-            Brighton
+          <td class="team" onclick="redirectTo('Brighton')">
             <img
               src="Clubs/Brighton_&_Hove_Albion_logo.svg.png"
               alt=""
               class="club"
             />
+            Brighton
           </td>
           <td>2</td>
           <td>1</td>
@@ -170,13 +186,13 @@
         </tr>
         <tr>
           <td>9</td>
-          <td class="team" style="text-align: left">
-            Aston Villa
+          <td class="team" onclick="redirectTo('Aston Villa')">
             <img
               src="Clubs/Aston_Villa_FC_crest_(2016).svg.png"
               alt=""
               class="club"
             />
+            Aston Villa
           </td>
           <td>2</td>
           <td>1</td>
@@ -188,13 +204,13 @@
         </tr>
         <tr>
           <td>10</td>
-          <td class="team" style="text-align: left">
-            Nottm Forset
+          <td class="team" onclick="redirectTo('Nottm Forset')">
             <img
               src="Clubs/1200px-Nottingham_Forest_logo.svg.png"
               alt=""
               class="club"
             />
+            Nottm Forset
           </td>
           <td>2</td>
           <td>1</td>
@@ -206,13 +222,13 @@
         </tr>
         <tr>
           <td>11</td>
-          <td class="team" style="text-align: left">
-            Bournemouth
+          <td class="team" onclick="redirectTo('Bournemouth')">
             <img
               src="Clubs/AFC_Bournemouth_(2013).svg.png"
               alt=""
               class="club"
             />
+            Bournemouth
           </td>
           <td>2</td>
           <td>1</td>
@@ -224,9 +240,9 @@
         </tr>
         <tr>
           <td>12</td>
-          <td class="team" style="text-align: left">
-            Liverpool
+          <td class="team" onclick="redirectTo('Liverpool')">
             <img src="Clubs/Liverpool_FC.svg.png" alt="" class="club" />
+            Liverpool
           </td>
           <td>2</td>
           <td>0</td>
@@ -238,13 +254,13 @@
         </tr>
         <tr>
           <td>13</td>
-          <td class="team" style="text-align: left">
-            Fulham
+          <td class="team" onclick="redirectTo('Fulham')">
             <img
               src="Clubs/fulham-fc-logo-EBBC39136A-seeklogo.com.png"
               alt=""
               class="club"
             />
+            Fulham
           </td>
           <td>2</td>
           <td>0</td>
@@ -256,13 +272,13 @@
         </tr>
         <tr>
           <td>14</td>
-          <td class="team" style="text-align: left">
-            Wolves
+          <td class="team" onclick="redirectTo('Wolves')">
             <img
               src="Clubs/Wolverhampton_Wanderers.svg.png"
               alt=""
               class="club"
             />
+            Wolves
           </td>
           <td>2</td>
           <td>0</td>
@@ -274,9 +290,9 @@
         </tr>
         <tr>
           <td>15</td>
-          <td class="team" style="text-align: left">
-            Leicter City
+          <td class="team" onclick="redirectTo('Leicter City')">
             <img src="Clubs/Leicester_City_crest.svg.png" alt="" class="club" />
+            Leicter City
           </td>
           <td>2</td>
           <td>0</td>
@@ -288,13 +304,13 @@
         </tr>
         <tr>
           <td>16</td>
-          <td class="team" style="text-align: left">
-            Crystal Palace
+          <td class="team" onclick="redirectTo('Crystal Palace')">
             <img
               src="Clubs/Crystal_Palace_FC_logo.svg.png"
               alt=""
               class="club"
             />
+            Crystal Palace
           </td>
           <td>2</td>
           <td>0</td>
@@ -306,9 +322,9 @@
         </tr>
         <tr>
           <td>17</td>
-          <td class="team" style="text-align: left">
-            Southampton
+          <td class="team" onclick="redirectTo('Southampton')">
             <img src="Clubs/FC_Southampton.svg.png" alt="" class="club" />
+            Southampton
           </td>
           <td>2</td>
           <td>0</td>
@@ -320,13 +336,13 @@
         </tr>
         <tr>
           <td class="Relegation">18</td>
-          <td class="team" style="text-align: left">
-            Everton
+          <td class="team" onclick="redirectTo('Everton')">
             <img
               src="Clubs/1200px-Everton_FC_logo.svg.png"
               alt=""
               class="club"
             />
+            Everton
           </td>
           <td>2</td>
           <td>0</td>
@@ -338,13 +354,13 @@
         </tr>
         <tr>
           <td class="Relegation">19</td>
-          <td class="team" style="text-align: left">
-            West Ham
+          <td class="team" onclick="redirectTo('West Ham')">
             <img
               src="Clubs/1200px-West_Ham_United_FC_logo.svg.png"
               alt=""
               class="club"
             />
+            West Ham
           </td>
           <td>2</td>
           <td>0</td>
@@ -356,13 +372,13 @@
         </tr>
         <tr>
           <td class="Relegation">20</td>
-          <td class="team" style="text-align: left">
-            Man United
+          <td class="team" onclick="redirectTo('Man United')">
             <img
               src="Clubs/Manchester_United_FC_crest.svg.png"
               alt=""
               class="club"
             />
+            Man United
           </td>
           <td>2</td>
           <td>0</td>
@@ -374,23 +390,20 @@
         </tr>
       </table>
       <div class="description">
-        <h4>Qualification / Relegation</h4>
+        <h3>Qualification / Relegation</h3>
         <div>
           <div style="background-color: green" class="UEFA"></div>
-
-          <div class="UE">UEFA champions League group stage</div>
+          UEFA champions League group stage
         </div>
 
         <div>
           <div style="background-color: orangered" class="UEFA"></div>
-
-          <div class="UE">Europa League group stage</div>
+          Europa League group stage
         </div>
 
         <div>
           <div style="background-color: red" class="UEFA"></div>
-
-          <div class="UE">Relegation</div>
+          Relegation
         </div>
       </div>
     </div>
