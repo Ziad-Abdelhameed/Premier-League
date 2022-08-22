@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Log In</title>
+    <link rel="stylesheet" href="CSS/first-web.css" />
+  </head>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("password");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+  </script>
+
+  <body>
+    <div class="center-column-items">
+      <img id="logo" src="EPL.png" alt="Logo" />
+      <form class="center-column-items">
+        <input
+          type="text"
+          name="email"
+          placeholder="Please Enter Email"
+          required
+        />
+
+        <input
+          type="password"
+          name="password"
+          placeholder="Please Enter Password"
+          required
+          id="password"
+        />
+        <input type="checkbox" onclick="myFunction()" class="middle" />Show
+        Password
+        <input type="submit" value="Log In" class="login" />
+
+        <input type="button" value="Sign Up" class="signup" />
+      </form>
+    </div>
+  </body>
+</html>

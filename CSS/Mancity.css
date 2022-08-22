@@ -1,0 +1,25 @@
+.manger {
+    align-items: center;
+    font-size: 15px;
+    height: 24px;
+    padding: 0 8px;
+}
+/* .pep {
+    display: flex;
+    height: 48px;
+    justify-content: space-between;
+    background-image: url("../Manchester_City_FC.png");
+} */
+img {
+    max-width: 6%;
+    border-radius: 50px;
+    background-color: white;
+}
+div {
+    background-color:#98c5e9;
+    font-size: 18px;
+    font-weight: bold;
+    border-style: outset;
+    border-width: 4px ;
+    padding: 5px;
+}

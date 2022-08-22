@@ -1,0 +1,41 @@
+img {
+    max-width: 6%;
+    border-radius: 50px;
+    background-color: white;
+}
+.unique {
+    width: 100%;
+    background-color:#B71515;
+    font-size: 19px;
+    color: whitesmoke ;
+    font-weight: bold;
+    border-style: outset;
+    border-width: 15px ;
+    padding: 5px;
+}
+.trophy {
+    padding-top: 5px;
+}
+.topleft {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+  }
+.topright {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+  }
+  .bottomleft {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  .bottomright {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+  }

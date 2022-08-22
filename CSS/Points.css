@@ -1,0 +1,79 @@
+th {
+    padding: 15px;
+}
+div {
+    background-color: gainsboro;
+}
+table, th, td {
+    border: 3px solid white;
+    border-collapse: collapse;
+    width: 10%;
+    /* color: blanchedalmond; */
+}
+
+.england {
+    max-width: 2%;
+}
+
+.club {
+
+    max-width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30%;
+}
+table {
+    width: 70%;
+    position: absolute;
+    /* down: 1px; */
+    right: 50px;
+    left: 400px;
+    font-size: 18px;
+    background-color: gainsboro;
+    /* background-image: url("../Premier-League.png") ;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+.first-four {
+  background-color: green;
+}
+.to-europa {
+    background-color: orangered;
+}
+
+.Relegation {
+    background-color: red;
+}
+.description {
+    
+    position: absolute;
+    left: 5px;
+    down: 6px;
+    width: 22%;
+    font-size: 18px;
+    border: 2px solid blanchedalmond;
+    padding: 18px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    margin-left: -5px;
+}
+.UEFA {  
+    display: inline-block;
+    height: 10px;
+    vertical-align: middle;
+    width: 10px;
+}
+.UE {
+    max-width: 100%;
+    white-space: initial;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.team {
+    font-weight: bold;
+    text-align: center;
+}
+p {
+    font-size: 28px;
+}
