@@ -22,6 +22,7 @@
       <img id="logo" src="EPL.png" alt="Logo" />
       <form class="center-column-items">
         <input
+          class="texts"
           type="text"
           name="email"
           placeholder="Please Enter Email"
@@ -29,17 +30,20 @@
         />
 
         <input
+          class="texts"
           type="password"
           name="password"
           placeholder="Please Enter Password"
           required
           id="password"
         />
-        <input type="checkbox" onclick="myFunction()" class="middle" />Show
-        Password
-        <input type="submit" value="Log In" class="login" />
+        <div class="center-row-items">
+          <input type="checkbox" onclick="myFunction()" class="middle" />
+          <p>Show Password</p>
+        </div>
+        <input type="submit" value="Log In" class="texts login" />
 
-        <input type="button" value="Sign Up" class="signup" />
+        <input type="button" value="Sign Up" class="texts signup" />
       </form>
     </div>
   </body>
