@@ -5,12 +5,21 @@
     <meta charset="UTF-8" />
     <title>SignUp</title>
     <link rel="stylesheet" href="CSS/first-web.css" href="CSS/new-signup.css" />
+
+    <script>
+      function signUp() {
+        window.location.replace("http://127.0.0.1:5500/home.html");
+      }
+    </script>
   </head>
 
   <body>
     <div class="center-column-items">
       <img id="logo" src="Images/EPL.png" alt="Logo" />
-      <form class="center-column-items">
+      <form
+        class="center-column-items"
+        onsubmit="event.preventDefault(); signUp();"
+      >
         <input
           class="texts"
           type="text"
@@ -42,8 +51,6 @@
           required
           id="confirm-password"
         />
-        <!-- <input type="submit" value="Log In" class="login" /> -->
-
         <input type="submit" value="Sign Up" class="texts signup" />
       </form>
     </div>

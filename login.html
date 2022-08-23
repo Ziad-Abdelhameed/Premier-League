@@ -5,30 +5,31 @@
 
     <title>Login</title>
     <link rel="stylesheet" href="CSS/first-web.css" />
-  </head>
-  <script>
-    function signUp() {
-      window.location.href = "http://127.0.0.1:5500/signup.html";
-    }
-    function login() {
-      var username = document.getElementById("user-name").value;
-      var password = document.getElementById("password").value;
 
-      if (username === "ziad abdelhameed" && password === "123456") {
-        window.location.replace("http://127.0.0.1:5500/home.html");
-      } else {
-        alert("Invalid username & password");
+    <script>
+      function signUp() {
+        window.location.href = "http://127.0.0.1:5500/signup.html";
       }
-    }
-    function showPassword() {
-      var password = document.getElementById("password");
-      if (password.type === "password") {
-        password.type = "text";
-      } else {
-        password.type = "password";
+      function login() {
+        var username = document.getElementById("user-name").value;
+        var password = document.getElementById("password").value;
+
+        if (username === "ziad abdelhameed" && password === "123456") {
+          window.location.replace("http://127.0.0.1:5500/home.html");
+        } else {
+          alert("Invalid username & password");
+        }
       }
-    }
-  </script>
+      function showPassword() {
+        var password = document.getElementById("password");
+        if (password.type === "password") {
+          password.type = "text";
+        } else {
+          password.type = "password";
+        }
+      }
+    </script>
+  </head>
 
   <body>
     <div class="center-column-items">
