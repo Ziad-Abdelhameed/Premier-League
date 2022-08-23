@@ -11,15 +11,13 @@
       window.location.href = "http://127.0.0.1:5500/signup.html";
     }
     function login() {
-      var email = document.getElementById("email").value;
+      var username = document.getElementById("user-name").value;
       var password = document.getElementById("password").value;
 
-      if (email === "ziad@gmail.com" && password === "123456") {
-        window.location.replace(
-          "http://127.0.0.1:5500/premier-league-table.html"
-        );
+      if (username === "ziad abdelhameed" && password === "123456") {
+        window.location.replace("http://127.0.0.1:5500/home.html");
       } else {
-        alert("Invalid email & password");
+        alert("Invalid username & password");
       }
     }
     function showPassword() {
@@ -34,17 +32,17 @@
 
   <body>
     <div class="center-column-items">
-      <img id="logo" src="EPL.png" alt="Logo" />
+      <img id="logo" src="Images/EPL.png" alt="Logo" />
       <form
         class="center-column-items"
         onsubmit="event.preventDefault(); login();"
       >
         <input
-          id="email"
+          id="user-name"
           type="text"
-          name="email"
+          name="text"
           class="texts"
-          placeholder="Please Enter Email"
+          placeholder="Please Enter User Name"
           required
         />
 

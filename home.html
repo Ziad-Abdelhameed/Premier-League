@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" href="CSS/first-web.css" />
+    <link rel="stylesheet" href="CSS/home.css" />
+  </head>
+  <body>
+    <div style="background-color: rgb(57, 10, 100)">
+      <h2 style="color: white; padding: 12px">Premier League</h2>
+      <!-- <input
+        type="button"
+        value="Log out"
+        class="signup"
+        style="margin-left: 25px"
+      /> -->
+    </div>
+
+    <!-- <div class="center-row-items">
+      <img class="feature" src="premier-league.jpg" alt="" />
+
+      <img class="feature" src="The_Alipay_Top_Scorer_Trophy.jpg" alt="" />
+    </div> -->
+
+    <div class="slideshow-container">
+      <div class="mySlides fade" style="text-align: center">
+        <img src="Images/Clubs/Flag_of_England.svg.png" />
+      </div>
+
+      <div class="mySlides fade" style="text-align: center">
+        <img src="Images/Clubs/Flag_of_Ukraine.svg.png" />
+      </div>
+
+      <div class="mySlides fade" style="text-align: center">
+        <img src="Images/0_Trophyjpeg.jpg" />
+      </div>
+
+      <div class="mySlides fade" style="text-align: center">
+        <img src="Images/Clubs/Liverpool_FC.svg.png" />
+      </div>
+
+      <div class="mySlides fade" style="text-align: center">
+        <img src="Images/Clubs/Manchester_City_FC.png" />
+      </div>
+
+      <div class="mySlides fade" style="text-align: center">
+        <img src="Images/Clubs/arsenal-logo-B27C071FE1-seeklogo.com.png" />
+      </div>
+
+      <div class="mySlides fade" style="text-align: center">
+        <img src="Images/Clubs/Chelsea_FC.svg.png" />
+      </div>
+
+      <div class="mySlides fade" style="text-align: center">
+        <img src="Images/Clubs/Leicester_City_crest.svg.png" />
+      </div>
+
+      <div class="mySlides fade" style="text-align: center">
+        <img src="Images/Clubs/Aston_Villa_FC_crest_(2016).svg.png" />
+      </div>
+
+      <div class="mySlides fade" style="text-align: center">
+        <img src="Images/Clubs/1200px-Everton_FC_logo.svg.png" />
+      </div>
+
+      <div class="mySlides fade" style="text-align: center">
+        <img src="Images/Clubs/1200px-West_Ham_United_FC_logo.svg.png" />
+      </div>
+
+      <div class="mySlides fade" style="text-align: center">
+        <img src="Images/Clubs/Leeds_United_F.C._logo.svg.png" />
+      </div>
+
+      <div class="mySlides fade" style="text-align: center">
+        <img src="Images/Clubs/Manchester_United_FC_crest.svg.png" />
+      </div>
+
+      <div class="mySlides fade" style="text-align: center">
+        <img src="Images/Clubs/AFC_Bournemouth_(2013).svg.png" />
+      </div>
+
+      <div class="mySlides fade" style="text-align: center">
+        <img src="Images/Clubs/Tottenham_Hotspur.svg.png" />
+      </div>
+
+      <div class="mySlides fade" style="text-align: center">
+        <img src="Images/Clubs/1200px-Nottingham_Forest_logo.svg.png" />
+      </div>
+
+      <div class="mySlides fade" style="text-align: center">
+        <img src="Images/Clubs/Brighton_&_Hove_Albion_logo.svg.png" />
+      </div>
+
+      <div class="mySlides fade" style="text-align: center">
+        <img src="Images/Clubs/Wolverhampton_Wanderers.svg.png" />
+      </div>
+
+      <div class="mySlides fade" style="text-align: center">
+        <img src="Images/Clubs/Newcastle_United_Logo.svg.png" />
+      </div>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+
+      <span class="dot"></span>
+      <span class="dot"></span>
+
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <div class="center-row-items" style="margin-top: 24px">
+      <img
+        src="Images/1661162436636.jpg"
+        alt=""
+        onclick="redirectTo('premierTable')"
+      />
+
+      <div style="margin: 24px"></div>
+
+      <img
+        src="Images/Premier-League-top-scorer.jpg"
+        alt=""
+        onclick="redirectTo('scorersTable')"
+      />
+    </div>
+
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+
+      function redirectTo(name) {
+        if (name === "premierTable") {
+          window.location.href =
+            "http://127.0.0.1:5500/premier-league-table.html";
+        } else if (name === "scorersTable") {
+          window.location.href = "http://127.0.0.1:5500/Top-scorers.html";
+        }
+      }
+    </script>
+  </body>
+</html>
